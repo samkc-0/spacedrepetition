@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="htmx-config" content='{"withCredentials":true}' />
+    <title>Dashboard</title>
+    <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  </head>
+  <body>
+    <button
+      hx-get="/api/user/whoami"
+      hx-trigger="click"
+      hx-target="#user"
+      hx-swap="innerHTML"
+    >
+      whoami
+    </button>
+    <div id="user"></div>
+  </body>
+</html>

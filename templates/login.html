@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="htmx-config" content='{"withCredentials":true}' />
+    <title>Login</title>
+    <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <main>
+      <form hx-post="/login" hx-trigger="submit" hx-target="#login-feedback">
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username" required /><br /><br />
+
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+
+        <button type="submit">Login</button>
+      </form>
+      <div id="register">
+        or <a name="register" href="/register">register</a>
+      </div>
+
+      <div id="login-feedback"></div>
+    </main>
+    <script></script>
+  </body>
+</html>

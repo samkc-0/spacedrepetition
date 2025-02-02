@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "word_id": 1,
+    "text": "Esa rola está bien chida, súbele más.",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "word_id": 1,
+    "text": "Tu nuevo celular está chido, ¿dónde lo compraste?",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "word_id": 1,
+    "text": "Estuvo chido el concierto, la neta me divertí un buen.",
+    "level": 2,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "word_id": 2,
+    "text": "No manches, güey, se me olvidó la tarea.",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "word_id": 2,
+    "text": "Oye, güey, ¿vas a la fiesta hoy?",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "word_id": 2,
+    "text": "Ese güey siempre llega tarde, ya ni me sorprende.",
+    "level": 2,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 7,
+    "word_id": 3,
+    "text": "¿Neta crees que va a funcionar ese plan?",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 8,
+    "word_id": 3,
+    "text": "Te lo digo en serio, neta estuvo increíble.",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 9,
+    "word_id": 3,
+    "text": "Neta no sé cómo resolviste eso tan rápido.",
+    "level": 2,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 10,
+    "word_id": 4,
+    "text": "Ese chavo es bien fresa, ni saluda.",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 11,
+    "word_id": 4,
+    "text": "No seas fresa, ven a comer tacos con nosotros.",
+    "level": 2,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 12,
+    "word_id": 4,
+    "text": "Es tan fresa que solo toma café de especialidad.",
+    "level": 3,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 13,
+    "word_id": 5,
+    "text": "Estoy buscando chamba, ¿sabes de algo?",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 14,
+    "word_id": 5,
+    "text": "Conseguí una buena chamba en una startup.",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 15,
+    "word_id": 5,
+    "text": "Esta chamba está pesada, pero el sueldo vale la pena.",
+    "level": 2,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 16,
+    "word_id": 6,
+    "text": "No traigo varo, ¿me invitas una chela?",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 17,
+    "word_id": 6,
+    "text": "Con ese varo me voy de vacaciones.",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 18,
+    "word_id": 6,
+    "text": "Necesito ahorrar más varo para comprar un coche.",
+    "level": 2,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 19,
+    "word_id": 7,
+    "text": "¡No manches! ¿Ganaste la lotería?",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 20,
+    "word_id": 7,
+    "text": "No manches, ese juego está buenísimo.",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 21,
+    "word_id": 7,
+    "text": "No manches, casi me da un infarto con ese susto.",
+    "level": 2,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 22,
+    "word_id": 8,
+    "text": "No hay bronca si llegas tarde.",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 23,
+    "word_id": 8,
+    "text": "Tenemos una bronca con el proyecto, hay que arreglarlo.",
+    "level": 2,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 24,
+    "word_id": 8,
+    "text": "¿Qué bronca traes? Te ves molesto.",
+    "level": 2,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 25,
+    "word_id": 9,
+    "text": "¡Órale! Qué rápido terminaste.",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 26,
+    "word_id": 9,
+    "text": "Órale, apúrate que ya vamos tarde.",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 27,
+    "word_id": 9,
+    "text": "Órale, eso sí no me lo esperaba.",
+    "level": 2,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 28,
+    "word_id": 10,
+    "text": "Vamos por unas chelas al rato.",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 29,
+    "word_id": 10,
+    "text": "¿Quién quiere otra chela?",
+    "level": 1,
+    "created_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "id": 30,
+    "word_id": 10,
+    "text": "Una chela bien fría cae perfecto en este calor.",
+    "level": 2,
+    "created_at": "2025-02-02T00:00:00Z"
+  }
+]
