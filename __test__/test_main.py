@@ -1,7 +1,5 @@
-from datetime import datetime
 from typing import List
-from dotenv import dotenv_values
-from fastapi import Path, status
+from fastapi import status
 from fastapi.testclient import TestClient
 import jwt
 from models import Answer, Memory, Sentence, User, SQLModel, Word
@@ -10,8 +8,6 @@ from sqlmodel.pool import StaticPool
 from main import app
 from routers.api import get_session
 import pytest
-import json
-from pathlib import Path
 from parsers import seed_test_data, parse_memory_data
 from config import Settings
 
