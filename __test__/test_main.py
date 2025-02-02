@@ -12,58 +12,31 @@ from routers.api import get_session
 import pytest
 import json
 from pathlib import Path
+from parsers import seed_test_data, parse_memory_data
+from config import Settings
 
 BAD_PASSWORD = "test-password-123"
-config = dotenv_values(".env")
-SECRET_KEY = config["JWT_SECRET_KEY"]
+
+SECRET_KEY = Settings().jwt_secret_key
 JWT_ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRES_MINUTES = 30
 
-
-def parse_memory_data(memory_data):
-    memory_data["due_date"] = datetime.fromisoformat(
-        memory_data["due_date"].replace("Z", "+00:00")
-    )
-    memory_data["created_at"] = datetime.fromisoformat(
-        memory_data["created_at"].replace("Z", "+00:00")
-    )
-    return Memory(**memory_data)
-
-
-def parse_word_data(word_data):
-    word_data["created_at"] = datetime.fromisoformat(
-        word_data["created_at"].replace("Z", "+00:00")
-    )
-    return Word(**word_data)
-
-
-def parse_sentence_data(sentence_data):
-    sentence_data["created_at"] = datetime.fromisoformat(
-        sentence_data["created_at"].replace("Z", "+00:00")
-    )
-    return Sentence(**sentence_data)
-
-
-def load_json(name: str, parser):
-    with open(Path(".", "data", f"{name}.json")) as f:
-        data = [parser(x) for x in json.load(f)]
-        assert data[0] is not None
-        return data
+test_data = seed_test_data()
 
 
 @pytest.fixture(name="memories")
 def memories_fixture():
-    return load_json("fake_memories", parse_memory_data)
+    return test_data["memories"]
 
 
 @pytest.fixture(name="words")
 def words_fixture():
-    return load_json("words", parse_word_data)
+    return test_data["words"]
 
 
 @pytest.fixture(name="sentences")
 def sentences_fixture():
-    return load_json("sentences", parse_sentence_data)
+    return test_data["sentences"]
 
 
 @pytest.fixture(name="session")

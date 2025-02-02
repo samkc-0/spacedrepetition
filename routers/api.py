@@ -90,19 +90,21 @@ async def submit_regsitration_form(
 
 @api_router.get("/review", status_code=status.HTTP_200_OK)
 async def get_next_memory(
-    User: User = Depends(get_current_user_cookie),
+    user: User = Depends(get_current_user_cookie),
     session: Session = Depends(get_session),
 ) -> Question:
-    memory = session.exec(select(Memory).order_by(Memory.due_date).limit(1)).first()
+    memories = session.exec(select(Memory).order_by(Memory.due_date).limit(1))
+    memory = memories.first()
     word = session.get(Word, memory.word_id)
     sentence = random.choice(
         session.exec(select(Sentence).where(Sentence.word_id == word.id)).all()
     )
-    return Question(memory=memory, word=word, sentence=sentence)
+    question = Question(memory=memory, word=word, sentence=sentence)
+    return question
 
 
 @api_router.post("/review", status_code=status.HTTP_200_OK)
-async def get_next_memory(
+async def rate_review(
     answer: Answer,
     session: Session = Depends(get_session),
 ) -> Memory:
