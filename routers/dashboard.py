@@ -3,6 +3,8 @@ from dotenv import dotenv_values
 from fastapi import APIRouter, Depends, Request, Response, status
 from fastapi.security import OAuth2PasswordRequestForm
 from fastapi.templating import Jinja2Templates
+from sqlmodel import Session
+from db import get_session
 from models import User
 from routers.api import login_for_access_token
 
@@ -34,8 +36,9 @@ async def get_login_form(request: Request):
 async def login(
     request: Request,
     form_data: OAuth2PasswordRequestForm = Depends(),
+    session: Session = Depends(get_session),
 ) -> HTMLResponse:
-    token = await login_for_access_token(form_data)
+    token = await login_for_access_token(form_data, session)
     response = templates.TemplateResponse(
         name="/dashboard.html", context={"request": request}
     )

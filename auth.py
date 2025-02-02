@@ -12,10 +12,9 @@ from typing import Literal, Optional
 from models import User
 from db import engine, get_session
 from password import verify_password
+from config import Settings
 
-config = dotenv_values(".env")
-
-SECRET_KEY = config["JWT_SECRET_KEY"]
+SECRET_KEY = Settings().jwt_secret_key
 JWT_ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRES_MINUTES = 30
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/token")

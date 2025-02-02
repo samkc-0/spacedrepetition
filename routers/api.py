@@ -24,8 +24,6 @@ from models import Answer, Memory, Question, Sentence, Word
 from memory import srs_algorithm
 
 
-config = dotenv_values(".env")
-
 api_router = APIRouter(prefix="/api", tags=["API"])
 
 
